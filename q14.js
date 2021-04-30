@@ -27,6 +27,10 @@ app.get('/', (req, res) => {
     res.render('index', {message: ''});
 });
 
+app.get('/register', (req, res) => {
+    res.redirect('/');
+});
+
 app.post('/register', async (req, res) => {
     try{
         await _USER.create({
