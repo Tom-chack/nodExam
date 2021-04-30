@@ -1,0 +1,18 @@
+<%- include('header.ejs') %>
+
+<main class="d-flex justify-content-center">
+  
+    <form action="/register" class="w-50" method="POST">
+        <h2>Delete User</h2>
+        <hr><br>
+        <p><%= message %></p>
+        <div class="form-group">
+            <label for="id">User ID:</label>
+            <input type="id" class="form-control" id="id" placeholder="Enter User _id" name="id">
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Delete This User</button>
+    </form>
+
+</main>
+    
+<%- include('footer.ejs') %>
