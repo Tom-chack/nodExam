@@ -38,7 +38,7 @@ app.post('/register', async (req, res) => {
         res.render('index-delete', {message: 'Deleted Successfully'});
     } 
     catch(e) {
-        res.render('index-delete', {message: e.message});
+        res.render('index-delete', {message: 'User is not found!'});
     }
 });
 
